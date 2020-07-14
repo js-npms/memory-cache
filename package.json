@@ -1,0 +1,21 @@
+{
+  "name": "@js-npms/memory-cache",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/memory-cache.js",
+  "module": "dist/memory-cache.module.js",
+  "unpkg": "dist/memory-cache.umd.js",
+  "scripts": {
+    "build": "microbundle --no-sourcemap",
+    "dev": "microbundle watch",
+    "test": "NODE_ENV=test mocha test/index.test.js --timeout 90000 --slow 10"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "microbundle": "^0.12.2",
+    "mocha": "^8.0.1"
+  }
+}
